@@ -29,10 +29,10 @@ function checkParams(arr) {
     };
 }
 
-server.listen({
+server.listen(process.env.PORT/**{
     host: config.listen.ip,
     port: config.listen.port
-}).on('error', function (err) {
+}**/).on('error', function (err) {
     if (err.code === 'EADDRINUSE') {
         config.listen.port++;
         console.log('Address in use, retrying on port ' + config.listen.port);
