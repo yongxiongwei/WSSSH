@@ -5,6 +5,11 @@
   "engines": {
     "node": "0.12.7"
   },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "build": "node ./index.js"
+  },
   "dependencies": {
     "basic-auth": "^1.0.3",
     "express": "^4.13.4",
