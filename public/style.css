@@ -40,7 +40,7 @@ body {
     width: 100px;
 }
 
-#login input, button {
+#login input {
     background-color: #000;
     color: #ddd;
     padding: 0px;
@@ -52,6 +52,12 @@ body {
 }
 
 #login button {
+    background-color: #000;
+    color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
     cursor: pointer;
     width: 100%;
 }

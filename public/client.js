@@ -2,6 +2,7 @@ var client = {
     info : {}
 };
 
+
 client.handleFiles = function (files) {
     if (files.length)
     {
@@ -27,6 +28,13 @@ client.connect = function () {
 
 client.run = function(options) {
     options = options || {};
+    document.getElementById('login').onkeydown = function (event) {
+        if (event.keyCode == 32 || event.keyCode == 13 || event.keyCode == 10)
+            if (event.target == document.getElementById('cfile'))
+                document.getElementById('cfile').click();
+            else
+                client.connect();
+    };
     window.addEventListener('load', function() {
         var socket = io.connect();
         client.ws = socket;
