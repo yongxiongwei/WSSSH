@@ -2,8 +2,74 @@ body {
     font-family: helvetica, sans-serif, arial;
     font-size: 1em;
     color: #111;
-    background-color: rgb(0, 0, 0);
     color: rgb(240, 240, 240);
+    background-color: #DDD;
+}
+
+#login {
+    color: #ddd;
+    margin: auto;
+    margin-top: 70px;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px 10px #000;
+    overflow: hidden;
+    display: block;
+    width: 350px;
+    background-color: #000;
+}
+
+#login #cfile {
+    cursor: pointer;
+    background-color: #000;
+    color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    width: 250px;
+}
+
+#login #privateKey {
+    display: none;
+}
+
+#login label {
+    display: inline-block;
+    width: 100px;
+}
+
+#login input, button {
+    background-color: #000;
+    color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    width: 250px;
+    outline: none;
+}
+
+#login button {
+    cursor: pointer;
+    width: 100%;
+}
+
+#term-can {
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    display: none;
+    font-size: 14px;
+}
+
+#term {
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px 10px #000;
+    overflow: hidden;
+    display: inline-block;
 }
 
 #header {
@@ -17,12 +83,6 @@ body {
     z-index: 99;
 }
 
-#terminal {
-    width: 960px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 2px;
-}
 
 #terminal .terminal {
     background-color: #111;
@@ -41,6 +101,7 @@ body {
     border-style: solid none none none;
     border-width: 1px;
     z-index: 99;
+    text-align: left;
 }
 
 #footer {

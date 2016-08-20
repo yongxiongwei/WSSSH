@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Web SSH</title>
+  <link rel="stylesheet" href="/xterm.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/term.js"></script>
+  <script src="/client.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <section id='login'>
+    <h3>Login:</h3>
+    <label>Host: </label><input id='host' type='text' /><br><br>
+    <label>Port: </label><input id='port' type='text' value='22' /><br><br>
+    <label>User: </label><input id='user' type='text' /><br><br>
+    <label>Pass: </label><input id='pass' type='text' /><br><br>
+    <label>PrivateKey: </label><label for='privateKey' id='cfile'>No private key</label>
+    <input type='file' id='privateKey' onchange='client.handleFiles(this.files)'><br><br>
+    <button onclick='client.connect()'>Connect</button>
+  </section>
+  <section id='term-can'>
+    <section id='term'>
+      <div id="header">Login</div>
+      <div id="terminal" class="terminal">
+        <script>
+          client.run();
+        </script>
+      </div>
+      <div id="bottomdiv">
+        <div id="footer"></div>
+        <div id="status"></div>
+      </div>
+    </sesction>
+  </sesction>
+</body>
+</html>

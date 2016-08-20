@@ -1,7 +1,6 @@
 {
   "description": "A Websocket to SSH2 gateway using term.js, socket.io, ssh2, and express",
   "private": true,
-  "repository": {},
   "engines": {
     "node": "0.12.7"
   },
@@ -17,5 +16,22 @@
     "socket.io": "^1.4.5",
     "ssh2": "^0.5.0",
     "term.js": "0.0.7"
-  }
+  },
+  "name": "wsssh",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "author": "SpringHack",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springhack/WSSSH.git"
+  },
+  "keywords": [
+    "Web",
+    "SSH"
+  ],
+  "bugs": {
+    "url": "https://github.com/springhack/WSSSH/issues"
+  },
+  "homepage": "https://github.com/springhack/WSSSH#readme"
 }
