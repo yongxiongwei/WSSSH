@@ -1,3 +1,18 @@
+<!--
+        Author: SpringHack - springhack@live.cn
+        Last modified: 2016-08-20 14:13:12
+        Filename: index.html
+        Description: Created by SpringHack using vim automatically.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Index</title>
+	</head>
+	<body>
+	</body>
+</html>
 <html>
 <head>
   <title>SpringHack WSSSH Client</title>
@@ -13,7 +28,7 @@
     <label>Host: </label><input tabindex='1' id='host' type='text' /><br><br>
     <label>Port: </label><input tabindex='2' id='port' type='text' value='22' /><br><br>
     <label>User: </label><input tabindex='3' id='user' type='text' /><br><br>
-    <label>Pass: </label><input tabindex='4' id='pass' type='text' /><br><br>
+    <label>Pass: </label><input tabindex='4' id='pass' type='password' /><br><br>
     <label>PrivateKey: </label><label tabindex='5' for='privateKey' id='cfile'>No private key</label>
     <input type='file' id='privateKey' onchange='client.handleFiles(this.files)'><br><br>
     <button tabindex='6' onclick='client.connect()'>Connect</button>
