@@ -5,6 +5,8 @@ Base on billchurch's WebSSH2: [billchurch/WebSSH2](https://github.com/billchurch
 
 Bare bones example of using SSH2 as a client on a host to proxy a Websocket / Socket.io connection to a SSH2 server. 
 
+![](http://ww1.sinaimg.cn/large/7eb49035jw1f7074e83gsj211y0jl780.jpg)
+
 # Instructions
 To install, copy to a location somewhere and 'npm install'
 
