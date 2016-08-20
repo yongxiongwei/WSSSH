@@ -1,5 +1,5 @@
 # WSSSH
-A Web SSH Client using ssh2, socket.io, term.js, and express
+SpringHack WSSSH Client: using ssh2, socket.io, term.js, and express connect to ssh server.
 
 Base on billchurch's WebSSH2: [billchurch/WebSSH2](https://github.com/billchurch/WebSSH2)
 
