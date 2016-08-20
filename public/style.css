@@ -94,6 +94,7 @@ body {
     background-color: #111;
     color: #fafafa;
     padding: 2px;
+    outline: none;
 }
 
 #terminal .terminal .terminal-cursor {

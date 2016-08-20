@@ -12,7 +12,7 @@ To install, copy to a location somewhere and 'npm install'
 
 Edit index.js to change the listener to something (maybe I'll make this CLI arguments at some point?)
 
-Fire up a browser, navigate to IP/port of your choice and specify a host:
+Fire up a browser, navigate to IP/port of your choice:
 
 http://localhost:3000/
 

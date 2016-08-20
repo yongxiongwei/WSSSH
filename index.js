@@ -70,7 +70,7 @@ io.on('connection', function(socket) {
                     stream.write(data);
                 });
                 stream.on('data', function(d) {
-                    socket.emit('data', d.toString('binary'));
+                    socket.emit('data', d.toString('utf-8'));
                 }).on('close', function() {
                     conn.end();
                 });
