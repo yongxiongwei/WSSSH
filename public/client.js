@@ -1,5 +1,6 @@
 var client = {
-    info : {}
+    info : {},
+    is : false
 };
 
 
@@ -17,6 +18,9 @@ client.handleFiles = function (files) {
 }
 
 client.connect = function () {
+    if (client.is)
+        return;
+    client.is = true;
     client.info.user = document.getElementById('user').value;
     client.info.pass = document.getElementById('pass').value;
     client.info.port = document.getElementById('port').value;
