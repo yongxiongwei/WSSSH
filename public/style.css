@@ -91,6 +91,7 @@ body {
 
 
 #terminal .terminal {
+    text-align: left;
     background-color: #111;
     color: #fafafa;
     padding: 2px;
@@ -102,6 +103,8 @@ body {
 }
 
 #bottomdiv {
+    position: relative;
+    top: 0px;
     width: 100%;
     background-color: rgb(50, 50, 50);
     border-color: white;

@@ -67,7 +67,7 @@ io.on('connection', function(socket) {
                 stream.setWindow(32, 128);
                 if (err) return socket.emit('status', 'SSH EXEC ERROR: ' + err.message).emit('statusBackground', 'red');
                 socket.on('data', function(data) {
-                    stream.write(data);
+                        stream.write(new Buffer(data));
                 });
                 stream.on('data', function(d) {
                     socket.emit('data', d.toString('utf-8'));
