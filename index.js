@@ -38,8 +38,9 @@ io.on('connection', function(socket) {
             password : 'sksks'
         }
     };
+    var conn;
     socket.on('doit', function () {
-        var conn = new ssh();
+        conn = new ssh();
         var info = {
             host: option.ssh.host,
             port: option.ssh.port,
@@ -97,8 +98,16 @@ io.on('connection', function(socket) {
             option.privateKey = data.privateKey;
         socket.emit('auth', {});
     }).on('error', function () {
-        conn.end();
-    }).on('close', function () {
-        conn.end();
+        try {
+            conn.end();
+        } catch (e) {
+            console.log(e.toString());
+        }
+    }).on('disconnect', function () {
+        try {
+            conn.end();
+        } catch (e) {
+            console.log(e.toString());
+        }
     });
 });
