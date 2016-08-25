@@ -97,6 +97,8 @@ io.on('connection', function(socket) {
             option.privateKey = data.privateKey;
         socket.emit('auth', {});
     }).on('error', function () {
-        //Nothing here
+        conn.end();
+    }).on('close', function () {
+        conn.end();
     });
 });
