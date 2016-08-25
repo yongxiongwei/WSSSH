@@ -38,7 +38,7 @@
 .terminal {
     /*Just a hack fix*/
     width: 1080px;
-    height: 497.78px;
+    /*height: 497.78px;*/
     /*Just that*/
     background-color: #000;
     color: #fff;
