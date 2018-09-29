@@ -25,7 +25,15 @@
       <div id="header">Login</div>
       <div id="terminal" class="terminal">
         <script>
-          client.run();
+            var search = window.location.search.substring(1,);
+            var arr = search.split('&');
+            arr.forEach(item => {
+                if (item.indexOf('host') > -1) 
+                    document.getElementById('host').value = item.split('=')[1];
+                if (item.indexOf('port') > -1) 
+                    document.getElementById('port').value = item.split('=')[1];
+            })
+            client.run();
         </script>
       </div>
       <div id="bottomdiv">
